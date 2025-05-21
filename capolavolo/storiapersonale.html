@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Storia Personale</title>
+ <style>
+ body {
+   margin: 0;
+   min-height: 100vh;
+   background: linear-gradient(135deg, #f0f0f0, #dcdcdc); /* Gradient grigio per uno sfondo più dinamico */
+   font-family: Arial, sans-serif;
+   color: #333333; /* Colore del testo scuro per contrasto */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 40px 20px;
+   box-sizing: border-box;
+   animation: fadeIn 2s ease-out;
+ }
+
+ @keyframes fadeIn {
+   0% { opacity: 0; transform: translateY(30px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ .container {
+   max-width: 800px;
+   background: #ffffff; /* Colore bianco per il contenuto */
+   padding: 30px 40px;
+   border-radius: 12px;
+   box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Ombra più prominente */
+   font-size: 1.15rem;
+   line-height: 1.7;
+ }
+
+ h1 {
+   margin-top: 0;
+   margin-bottom: 20px;
+   font-size: 2.8rem;
+   color: #333333;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.3); 
+   animation: slideUp 1s ease-out;
+ }
+
+ @keyframes slideUp {
+   0% { opacity: 0; transform: translateY(30px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ h2 {
+   margin-top: 25px;
+   margin-bottom: 12px;
+   font-size: 1.8rem;
+   color: #555555;
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.3); 
+ }
+
+ p {
+   margin-bottom: 20px;
+   opacity: 0;
+   animation: fadeInText 1.5s ease-out forwards;
+ }
+
+ @keyframes fadeInText {
+   0% { opacity: 0; transform: translateY(20px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ a.back {
+   display: inline-block;
+   margin-top: 15px;
+   text-decoration: none;
+   background: #6c757d;
+   color: white;
+   padding: 12px 28px;
+   border-radius: 6px;
+   font-weight: 600;
+   font-size: 1.15rem;
+   transition: background-color 0.3s ease;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+ }
+
+ a.back:hover {
+   background: #5a6268;
+   box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+ }
+
+ /* Slideshow styles */
+ .slideshow-container {
+   position: relative;
+   max-width: 100%;
+   margin: 0 auto 30px auto;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+ }
+
+ .slides {
+   display: none;
+   width: 100%;
+   height: 500px;
+   object-fit: contain;
+   object-position: center center;
+   border-radius: 10px;
+ }
+
+ /* Controlli per lo slideshow */
+ .prev, .next {
+   position: absolute;
+   top: 50%;
+   padding: 16px;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   font-size: 18px;
+   cursor: pointer;
+   border-radius: 50%;
+   z-index: 10;
+   transition: background-color 0.3s ease;
+ }
+
+ .prev:hover, .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ .prev {
+   left: 10px;
+   transform: translateY(-50%);
+ }
+
+ .next {
+   right: 10px;
+   transform: translateY(-50%);
+ }
+
+ </style>
+</head>
+<body>
+ <div class="container">
+   <h1>Storia Personale</h1>
+
+   <h2>Il sogno ovale di un bambino</h2>
+   <p>Da quando ero piccolo, il rugby ha sempre fatto parte della mia vita. Ho iniziato a giocare quando avevo solo 4 anni, un’età in cui molti bambini imparano appena a conoscere il mondo, io scoprivo già il valore della squadra, della fatica, della passione. Da allora, ho sempre sognato di diventare un grande giocatore, di fare del rugby non solo una passione, ma un vero e proprio percorso di vita.</p>
+
+   <h2>Le difficoltà</h2>
+   <p>Non è stato semplice. Ci ho provato tante volte, ma spesso le circostanze non mi hanno permesso di fare quel salto in avanti che desideravo. Gli ostacoli, le occasioni mancate, le difficoltà personali e familiari sembravano allontanare quel sogno che, però, non ho mai smesso di tenere stretto.</p>
+
+   <h2>L’Accademia</h2>
+   <p>Negli ultimi anni, però, qualcosa è cambiato. Ho avuto l’opportunità di vivere un’esperienza straordinaria: sono stato convocato a <em>Roma con la Nazionale Italiana</em>, dove ho partecipato a un ritiro presso <em>l’Accademia</em>. È stato un momento unico nella mia vita: ho conosciuto ragazzi da tutta Italia, condiviso allenamenti intensi, imparato cose nuove che mi hanno fatto crescere tantissimo, non solo come atleta ma anche come persona. È un’esperienza che non si può paragonare a nulla, e che porterò sempre con me.</p>
+
+   <h2>La selezione</h2>
+   <p>In più, sono stato selezionato per un torneo di Rugby Seven con la rappresentativa campania, e a giugno partirò di nuovo per rappresentare la campania. Un altro passo importante, che vivo con entusiasmo, gratitudine e grande responsabilità.</p>
+
+   <!-- Slideshow -->
+   <div class="slideshow-container">
+     <img class="slides" src="rugby1.jpg" alt="Ragazzo che gioca a rugby" />
+     <img class="slides" src="rugby2.jpg" alt="Allenamento rugby" />
+     <img class="slides" src="rugby3.jpg" alt="Squadra di rugby" />
+     <img class="slides" src="rugby4.jpg" alt="Accademia rugby" />
+     <img class="slides" src="rugby5.jpg" alt="Rugby seven" />
+     <img class="slides" src="rugby6.jpg" alt="Rugby seven" />
+     <img class="slides" src="rugby7.jpg" alt="Rugby seven" />
+     <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+     <button class="next" onclick="plusSlides(1)">&#10095;</button>
+   </div>
+
+   <a class="back" href="homepage.html">Torna alla Home</a>
+ </div>
+
+ <script>
+ let slideIndex = 0;
+
+ function showSlides() {
+   const slides = document.getElementsByClassName("slides");
+   for (let i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+   }
+   slideIndex++;
+   if (slideIndex > slides.length) slideIndex = 1;
+   slides[slideIndex - 1].style.display = "block";
+   setTimeout(showSlides, 3000);
+ }
+
+ function plusSlides(n) {
+   slideIndex += n;
+   if (slideIndex > slides.length) slideIndex = 1;
+   if (slideIndex < 1) slideIndex = slides.length;
+   showSlides();
+ }
+
+ showSlides();
+ </script>
+</body>
+</html>

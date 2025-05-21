@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Storia del Rugby</title>
+
+  <style>
+    /* Sfondo animato */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #C82333; /* Colore rosso come il bubble */
+      font-family: 'Poppins', Arial, sans-serif;
+      color: #ffffff; /* Testo bianco per contrastare con lo sfondo rosso */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Centrare il contenuto verticalmente */
+      padding: 40px 20px;
+      box-sizing: border-box;
+      animation: fadeInBackground 2s ease-out;
+    }
+
+    /* Animazione di fade-in per lo sfondo */
+    @keyframes fadeInBackground {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      text-align: center;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+      letter-spacing: 2px; /* Aggiunta distanza tra le lettere */
+      animation: slideDown 1.5s ease-out;
+    }
+
+    /* Animazione di ingresso per il titolo */
+    @keyframes slideDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .content {
+      max-width: 700px;
+      background: rgba(0,0,0,0.7); /* Sfondo scuro per contrastare con il testo chiaro */
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.7);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: justify;
+      width: 100%;
+      opacity: 0;
+      animation: fadeInContent 2s ease-out forwards; /* Animazione di ingresso */
+    }
+
+    /* Animazione di fade-in per il contenuto */
+    @keyframes fadeInContent {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Stile per i paragrafi */
+    .content p {
+      margin-bottom: 20px;
+    }
+
+    a.back {
+      margin-top: 30px;
+      text-decoration: none;
+      background-color: #C82333; /* Colore rosso del pulsante */
+      color: white;
+      padding: 14px 40px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.25rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      align-self: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      animation: bounceIn 1.5s ease-out;
+    }
+
+    /* Animazione di bounce per il pulsante */
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    a.back:hover {
+      background-color: #a71d2a; /* Colore più scuro per hover */
+      transform: scale(1.05); /* Leggero ingrandimento del pulsante */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Media query per dispositivi più piccoli */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .content {
+        padding: 20px 30px;
+        font-size: 1rem;
+      }
+
+      a.back {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Storia del Rugby</h1>
+  <div class="content">
+    <p>La leggenda vuole che il rugby sia nato nel 1823 nella cittadina inglese di Rugby, nel Warwickshire. Durante una partita di calcio presso la Rugby School, uno studente di nome William Webb Ellis avrebbe preso il pallone con le mani e corso verso la porta avversaria, rompendo le regole del calcio dell'epoca. Questo gesto rivoluzionario diede origine a un nuovo sport, che nei decenni successivi si sviluppò in una disciplina distinta.</p>
+
+    <p>Il rugby si è evoluto rapidamente nel XIX secolo. Nel 1871 venne fondata la Rugby Football Union (RFU) in Inghilterra, che stabilì le prime regole ufficiali del gioco. Con il tempo, si diffusero due varianti principali: il rugby a 15 e il rugby a 13, quest'ultimo nato da una scissione avvenuta nel 1895 per motivi legati al professionismo.</p>
+
+    <p>Il rugby si espanse ben presto oltre i confini britannici, trovando terreno fertile nei paesi del Commonwealth come Nuova Zelanda, Australia, Sudafrica, Canada e nelle Isole del Pacifico. In Francia, il rugby si radicò saldamente nel sud del paese, diventando un elemento importante dell'identità culturale locale.</p>
+
+    <p>Nel corso del Novecento, il rugby si affermò come sport internazionale, culminando con la creazione della Coppa del Mondo di Rugby nel 1987. Questo evento è oggi uno dei più prestigiosi tornei sportivi a livello mondiale.</p>
+
+    <p>Oggi il rugby è apprezzato non solo per la competizione, ma anche per i suoi valori di rispetto, lavoro di squadra, disciplina e spirito sportivo. La figura di William Webb Ellis resta simbolica: a lui è intitolato il trofeo assegnato ai vincitori della Coppa del Mondo di Rugby.</p>
+  </div>
+  <a class="back" href="homepage.html">Torna alla Home</a>
+</body>
+</html>

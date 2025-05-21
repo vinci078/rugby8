@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Obiettivi Futuri</title>
+ <style>
+ body {
+   margin: 0;
+   min-height: 100vh;
+   background-color: #856404; /* Sfondo giallo dorato */
+   font-family: Arial, sans-serif;
+   color: #d4f1be;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 40px 20px;
+   box-sizing: border-box;
+   animation: fadeIn 2s ease-out;
+ }
+
+ /* Animazione di entrata per la pagina */
+ @keyframes fadeIn {
+   0% { opacity: 0; transform: translateY(30px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ h1 {
+   font-size: 3rem;
+   margin-bottom: 30px;
+   text-align: center;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+   animation: slideUp 1s ease-out;
+ }
+
+ /* Animazione di entrata per il titolo */
+ @keyframes slideUp {
+   0% { opacity: 0; transform: translateY(30px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ .container {
+   max-width: 700px;
+   background: rgba(0,0,0,0.6); /* Sfondo scuro per il contenuto */
+   padding: 25px 35px;
+   border-radius: 12px;
+   box-shadow: 0 0 15px rgba(0,0,0,0.6);
+   font-size: 1.1rem;
+   line-height: 1.6;
+   animation: fadeInUp 2s ease-out;
+ }
+
+ /* Animazione di entrata per il contenuto */
+ @keyframes fadeInUp {
+   0% { opacity: 0; transform: translateY(30px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ p {
+   margin-bottom: 20px;
+   opacity: 0;
+   animation: fadeInText 1.5s ease-out forwards;
+ }
+
+ /* Animazione di entrata per i paragrafi */
+ @keyframes fadeInText {
+   0% { opacity: 0; transform: translateY(20px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ a {
+   color: #a9e07f;
+   text-decoration: none;
+   font-weight: 600;
+   transition: color 0.3s, transform 0.3s;
+ }
+ a:hover {
+   color: #d4f1be;
+   text-decoration: underline;
+   transform: translateX(5px); /* Effetto di spostamento al passaggio del mouse */
+ }
+
+ a.back {
+   margin-top: 30px;
+   text-decoration: none;
+   background-color: #856404; /* Colore giallo dorato per il bottone */
+   color: white;
+   padding: 14px 40px;
+   border-radius: 8px;
+   font-weight: 600;
+   font-size: 1.25rem;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+   align-self: center;
+   display: inline-block;
+ }
+
+ a.back:hover {
+   background-color: #6c4e07; /* Colore più scuro per hover */
+   box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+   transform: scale(1.05); /* Leggera espansione del pulsante */
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+   <h1>Obiettivi Futuri</h1>
+   <p>Poi è arrivata una proposta che ha cambiato tutto: una squadra importante, il Villorba Rugby, che fa campionati importanti a Treviso, mi ha contattato per far parte del loro progetto. È stata una notizia che mi ha lasciato senza parole. Una grande opportunità, certo, ma anche una grande decisione da prendere.</p>
+   <p>Per coglierla, dovrò trasferirmi, lasciare la mia città, le mie abitudini, gli amici di sempre, e soprattutto la mia famiglia, che è sempre stata il mio punto di riferimento.</p>
+   <p>Non è facile partire. Il cambiamento fa paura, ma a volte è necessario. Ho scelto di accettare, di mettermi in gioco, perché credo che i sogni, per avverarsi, abbiano bisogno anche di coraggio.</p>
+   <p>Questo passo rappresenta per me non solo una possibilità sportiva, ma un momento di crescita personale: mi sto prendendo la responsabilità del mio futuro, con tutte le emozioni, le incertezze e le speranze che questo comporta.</p>
+
+   <a class="back" href="homepage.html">Torna alla Home</a>
+ </div>
+</body>
+</html>

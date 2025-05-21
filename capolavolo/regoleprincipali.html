@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Regole Principali</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    /* Aggiungi un background animato */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0056B3, #003366); /* Gradiente blu */
+      font-family: 'Poppins', Arial, sans-serif;
+      color: #ffffff; /* Testo bianco per contrastare con lo sfondo blu */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      animation: fadeIn 2s ease-out;
+    }
+
+    /* Animazione di entrata della pagina */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      color: #d4e4f7;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    /* Animazione di ingresso per il titolo */
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .content {
+      max-width: 800px;
+      background: rgba(0,0,0,0.7); /* Sfondo scuro per contrastare con il testo chiaro */
+      padding: 35px 45px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: justify;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    /* Animazione di entrata per il contenuto */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+
+    li {
+      margin-bottom: 15px;
+      opacity: 0;
+      animation: fadeInListItem 1s ease-out forwards;
+    }
+
+    /* Animazione di entrata per le voci della lista */
+    @keyframes fadeInListItem {
+      0% { opacity: 0; transform: translateX(-20px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    a.external-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #a8d08d;
+      font-weight: 600;
+      text-decoration: underline;
+      transition: color 0.3s, transform 0.3s;
+      font-size: 1.15rem;
+    }
+
+    a.external-link:hover {
+      color: #e0f0c0;
+      transform: translateX(5px); /* Effetto spostamento al passaggio del mouse */
+    }
+
+    a.back {
+      margin-top: 30px;
+      text-decoration: none;
+      background-color: #0056B3; /* Colore blu per il pulsante, uguale alla pagina */
+      color: white;
+      padding: 15px 40px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.3rem;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      text-align: center;
+      animation: slideUp 1s ease-out;
+    }
+
+    a.back:hover {
+      background-color: #003366; /* Colore blu più scuro per hover */
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      transform: scale(1.05); /* Leggera espansione del pulsante */
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .content {
+        padding: 25px 35px;
+        font-size: 1rem;
+      }
+
+      a.back {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Regole Principali del Rugby</h1>
+  <div class="content">
+    <p>Il rugby è uno sport di squadra in cui l'obiettivo principale è segnare punti portando la palla oltre la linea di meta avversaria (meta) o calciandola tra i pali (trasformazioni, calci piazzati o drop).</p>
+    <p>Le partite si giocano generalmente con 15 giocatori per squadra (rugby a 15) e hanno due tempi da 40 minuti ciascuno. La palla può essere passata solo all'indietro o lateralmente, mentre è permesso calciare in avanti.</p>
+    <p>Il contatto fisico è parte integrante del gioco: placcaggi, mischie, touche e ruck sono momenti fondamentali in cui si contendono la palla. Il rispetto delle regole di sicurezza e correttezza è essenziale per evitare falli o sanzioni.</p>
+    <p>Tra le regole principali:</p>
+    <ul>
+      <li><strong>Placcaggio:</strong> consentito solo al portatore di palla per fermare la sua avanzata;</li>
+      <li><strong>Mischia:</strong> fase di gioco in cui otto giocatori di ogni squadra si uniscono per contendere la palla;</li>
+      <li><strong>Touche:</strong> quando la palla esce fuori campo, si riprende con un lancio laterale;</li>
+      <li><strong>Fuorigioco:</strong> i giocatori devono rispettare la linea di gioco per non ostacolare gli avversari;</li>
+      <li><strong>Meta:</strong> vale 5 punti e si segna schiacciando la palla oltre la linea di meta;</li>
+      <li><strong>Trasformazione:</strong> un calcio dopo la meta, vale 2 punti;</li>
+      <li><strong>Calcio piazzato e drop:</strong> metodi per segnare 3 punti calciando tra i pali;</li>
+      <li><strong>Durata partita:</strong> due tempi da 40 minuti ciascuno, con intervallo;</li>
+      <li><strong>Passaggi:</strong> consentiti solo all’indietro o lateralmente;</li>
+      <li><strong>Falli e sanzioni:</strong> placcaggi pericolosi, ostruzioni e falli vengono puniti con calci di punizione, cartellini gialli o rossi;</li>
+      <li><strong>Ruck e maul:</strong> fasi di gioco in cui i giocatori si contendono la palla dopo un placcaggio o in piedi;</li>
+    </ul>
+    <a class="external-link" href="https://www.world.rugby/the-game/laws" target="_blank" rel="noopener noreferrer">Per approfondire le regole ufficiali visita il sito di World Rugby</a>
+  </div>
+  <a class="back" href="homepage.html">Torna alla Home</a>
+</body>
+</html>

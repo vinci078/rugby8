@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Migliori Campionati</title>
+ <style>
+ body {
+   margin: 0;
+   min-height: 100vh;
+   background-color: #1e4620; /* verde scuro uniforme */
+   font-family: 'Poppins', Arial, sans-serif;
+   color: #d4f1be;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px 20px;
+   box-sizing: border-box;
+   animation: fadeIn 2s ease-out;
+ }
+
+ /* Animazione di entrata per la pagina */
+ @keyframes fadeIn {
+   0% { opacity: 0; transform: translateY(30px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ h1 {
+   font-size: 3rem;
+   margin-bottom: 30px;
+   text-align: center;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+   animation: slideUp 1s ease-out;
+ }
+
+ /* Animazione di entrata per il titolo */
+ @keyframes slideUp {
+   0% { opacity: 0; transform: translateY(30px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ .content {
+   max-width: 700px;
+   background: rgba(0,0,0,0.5);
+   padding: 25px 35px;
+   border-radius: 12px;
+   box-shadow: 0 0 15px rgba(0,0,0,0.6);
+   font-size: 1.1rem;
+   line-height: 1.6;
+   animation: fadeInUp 2s ease-out;
+ }
+
+ /* Animazione di entrata per il contenuto */
+ @keyframes fadeInUp {
+   0% { opacity: 0; transform: translateY(30px); }
+   100% { opacity: 1; transform: translateY(0); }
+ }
+
+ ul {
+   padding-left: 1.2em;
+   margin-top: 10px;
+ }
+
+ li {
+   margin-bottom: 15px;
+   opacity: 0;
+   animation: fadeInListItem 1s ease-out forwards;
+ }
+
+ /* Animazione di entrata per le voci della lista */
+ @keyframes fadeInListItem {
+   0% { opacity: 0; transform: translateX(-20px); }
+   100% { opacity: 1; transform: translateX(0); }
+ }
+
+ a {
+   color: #a9e07f;
+   text-decoration: none;
+   font-weight: 600;
+   transition: color 0.3s, transform 0.3s;
+ }
+ a:hover {
+   color: #d4f1be;
+   text-decoration: underline;
+   transform: translateX(5px); /* Effetto di spostamento al passaggio del mouse */
+ }
+
+ a.back {
+   margin-top: 30px;
+   text-decoration: none;
+   background-color: #155724; /* Colore #155724 come richiesto */
+   color: white;
+   padding: 14px 40px;
+   border-radius: 8px;
+   font-weight: 600;
+   font-size: 1.25rem;
+   transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+   align-self: center;
+   display: inline-block;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+ }
+
+ a.back:hover {
+   background-color: #144d21; /* Colore più scuro per hover */
+   box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+   transform: scale(1.05); /* Leggera espansione del pulsante */
+ }
+ </style>
+</head>
+<body>
+ <h1>Migliori Campionati di Rugby</h1>
+ <div class="content">
+   <p>I principali campionati di rugby al mondo sono:</p>
+   <ul>
+     <li>
+       <strong>Sei Nazioni (Six Nations):</strong> torneo annuale che coinvolge Inghilterra, Francia, Irlanda, Italia, Scozia e Galles. È uno degli eventi più prestigiosi nel rugby internazionale.<br>
+       <a href="https://www.sixnationsrugby.com/" target="_blank" rel="noopener noreferrer">Visita il sito ufficiale</a>
+     </li>
+     <li>
+       <strong>Rugby Championship:</strong> torneo annuale tra le nazionali dell’emisfero sud: Nuova Zelanda, Australia, Sudafrica e Argentina. Conosciuto per l’alto livello di gioco e la forte competitività.<br>
+       <a href="https://www.sanzarrugby.com/therugbychampionship/" target="_blank" rel="noopener noreferrer">Visita il sito ufficiale</a>
+     </li>
+     <li>
+       <strong>Premiership Inglese (Gallagher Premiership):</strong> la massima serie del rugby inglese, con squadre di alto livello e grande seguito di tifosi.<br>
+       <a href="https://www.premiershiprugby.com/" target="_blank" rel="noopener noreferrer">Visita il sito ufficiale</a>
+     </li>
+     <li>
+       <strong>Top 14 Francese:</strong> il campionato francese, molto competitivo e ricco di giocatori internazionali, noto per il suo stile spettacolare.<br>
+       <a href="https://www.lnr.fr/rugby-top-14" target="_blank" rel="noopener noreferrer">Visita il sito ufficiale</a>
+     </li>
+     <li>
+       <strong>Super Rugby:</strong> torneo tra squadre di Australia, Nuova Zelanda, Sudafrica, Argentina e Giappone. Rinomato per l’alto tasso tecnico e velocità di gioco.<br>
+       <a href="https://super.rugby/" target="_blank" rel="noopener noreferrer">Visita il sito ufficiale</a>
+     </li>
+   </ul>
+ </div>
+ <a class="back" href="homepage.html">Torna alla Home</a>
+</body>
+</html>
